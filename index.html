@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <!--First Section-->
+    <div class="container first text-center py-3">
+        <div class="row justify-content-center">
+            <div class="col-8 col-md-6">
+                <input id="city" type="text" class="form-control" placeholder="Enter City">
+            </div>
+            <div class="col-4 col-md-2">
+                <button id="btni" class="btn btn-light">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="container weather-container text-center py-3">
+        <!--Middle Section-->
+        <div class="middle py-3">
+            <img src="./images/images/clear.png" class="img-fluid">
+            <h2 id="temp">7<sup>o</sup>c</h2>
+            <h3 id="citymiddle">New York</h3>
+        </div>
+        <!--Last Section-->
+        <div class="last row justify-content-center">
+            <div class="col-6 col-md-4">
+                <img src="./images/images/humidity.png" id="humidity" class="img-fluid">
+                <div class="humidity_info">
+                    <h2 id="perh">48%</h2>
+                    <h4>Humidity</h4>
+                </div>
+            </div>
+            <div class="col-6 col-md-4">
+                <img src="./images/images/wind.png" id="wind" class="img-fluid">
+                <div class="wind_info">
+                    <h2 id="perw">10.29 km/hr</h2>
+                    <h4>Wind Speed</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
